@@ -3,6 +3,7 @@
   padding: 0;
 }
 .main-c {
+  position: relative;
   width: 825px;
   margin: 50px auto;
   border: 5px solid black;
@@ -70,4 +71,59 @@ button {
 button:hover {
   color: white;
   background-color: black;
+}
+.box-c {
+  margin: 25px 0;
+}
+#box1 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: black;
+}
+#box2 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: blue;
+}
+#box3 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: red;
+}
+#box4 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: yellow;
+}
+#box5 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: green;
+}
+#box6 {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: brown;
+}
+h4 {
+  position: absolute;
+  background-color: red;
+  padding: 5px;
+  display: inline-block;
+  color: white;
+  letter-spacing: 1.5px;
+  top: -12px;
+  left: -30px;
 }
