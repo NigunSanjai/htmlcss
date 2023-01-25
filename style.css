@@ -1,3 +1,18 @@
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* to center the page */
+.main-b {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* the absolute takes this to position */
+body {
+  position: relative;
+}
 /* most of the properties related to text gets inherited and !important does not apply with inheritance and applies in direct application */
 /* universal selector does not come under inheritance but in turn gets applied to each and every element */
 h3,
@@ -5,6 +20,13 @@ h1,
 h2 {
   font-family: sans-serif;
   color: rgba(61, 198, 46, 0.929);
+  margin-bottom: 20px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+img {
+  margin-bottom: 20px;
 }
 p,
 li {
@@ -14,6 +36,10 @@ li {
 p,
 li {
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+li {
+  margin-left: 50px;
 }
 h3 {
   font-size: 26px;
@@ -29,10 +55,11 @@ h1 {
 h2 {
   font-size: 30px;
   font-style: oblique;
+  position: relative;
 }
 p {
   font-size: 22px;
-  line-height: 1.25;
+  line-height: 1.5;
   text-align: justify;
 }
 /* li elements to be styled uniquely */
@@ -40,6 +67,10 @@ li {
   font-size: 22px;
   text-align: justify;
   line-height: 1.5;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 10px;
 }
 /* css desendant selectors */
 /* footer p {
@@ -66,12 +97,22 @@ li {
 .r-l {
   list-style: none;
 }
+/* padding tlbr or t/b l/r or a single value space between content and border */
 .main-h {
   background-color: rgb(237, 237, 237);
+  padding: 10px;
+  margin-bottom: 40px;
 }
 aside {
   background-color: rgb(237, 237, 237);
   border: 5px solid rgba(61, 198, 46, 0.929);
+  margin: 50px 0;
+  padding: 50px 0;
+  text-align: center;
+  width: 700px;
+}
+aside img {
+  margin: 0;
 }
 /* pseudo class css property for table styling commonly used*/
 /* li:first-child {
@@ -101,7 +142,25 @@ a:hover {
 a:active {
   color: paleturquoise;
 }
-
+.main-img {
+  width: 80%;
+  height: auto;
+}
+nav a:link {
+  display: inline-block;
+  margin: 20px;
+  padding: 5px;
+}
+/* absolute pos are n relation with the viewport i.e visible part of the brower  */
+button {
+  color: red;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
 /* css conflicts always write css as simple as that */
 /* #footer {
   color: red;
@@ -115,3 +174,22 @@ a:active {
 } */
 
 /* declare in the same order */
+/* pseudo elements in css with :: double colon and : for pseudo classes */
+p::first-letter {
+  font-size: 40px;
+}
+/* adjacent selector */
+/* h3 + p::first-letter {
+  color: red;
+} */
+h2::before {
+  content: "TOP";
+  background-color: yellow;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 2.5px;
+  right: 0;
+}
