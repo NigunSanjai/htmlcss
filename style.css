@@ -1,0 +1,114 @@
+h3,
+h1,
+h2 {
+  font-family: sans-serif;
+  color: rgba(61, 198, 46, 0.929);
+}
+p,
+li {
+  color: #444;
+}
+/* Grouping the selectors togethter to aply the same porperty by using commas */
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  font-size: 26px;
+  font-style: oblique;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  font-style: oblique;
+  /* in colors use hexadecimal for pure color an rgba for transparancy and use vs color picekr for the choice */
+  /* color: rgba(61, 198, 46, 0.929); */
+}
+h2 {
+  font-size: 30px;
+  font-style: oblique;
+}
+p {
+  font-size: 22px;
+  line-height: 1.25;
+  text-align: justify;
+}
+/* li elements to be styled uniquely */
+li {
+  font-size: 22px;
+  text-align: justify;
+  line-height: 1.5;
+}
+/* css desendant selectors */
+/* footer p {
+  font-size: 20px;
+} */
+/* this is not a good idea and can use classes and ids */
+/* article header p {
+  font-style: italic;
+} */
+/* use . for class # for id */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+#footer {
+  font-style: italic;
+  font-size: 18px;
+}
+/* class selector and space characters are replaced by - or_ */
+.r-a {
+  font-weight: bold;
+  font-size: 18px;
+}
+.r-l {
+  list-style: none;
+}
+.main-h {
+  background-color: rgb(237, 237, 237);
+}
+aside {
+  background-color: rgb(237, 237, 237);
+  border: 5px solid rgba(61, 198, 46, 0.929);
+}
+/* pseudo class css property for table styling commonly used*/
+/* li:first-child {
+  font-weight: bold;
+} */
+/* for specific child */
+/* li:nth-child(2) {
+  color: red;
+} */
+/* the below mentioned property is a misconception about the pseudo class in css becz it takes the first child as a p element under the article and not the first p occurence */
+article p:first-child {
+  color: blue;
+}
+/* the below pseudo class targets ony the a with href */
+a:link {
+  color: blueviolet;
+  text-decoration: none;
+}
+a:visited {
+  color: blueviolet;
+}
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:active {
+  color: paleturquoise;
+}
+/* css conflicts always write css as simple as that */
+/* #footer {
+  color: red;
+}
+
+.footer {
+  color: yellow !important;
+}
+.c {
+  color: blue;
+} */
+
+/* declare in the same order */

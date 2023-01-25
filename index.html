@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- tell the browser that this is html document and browser sould render this doc as html 5 -->
+<html lang="en">
+  <!-- lang can spectify the semnatic meaning -->
+  <!-- should start with this tag -->
+  <!-- Remember about the semnatic html which gives a meaning to the content that the browser takes care of while rendering-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!--link tag has only purpouse of linking external css href and rel are the attributes-->
+    <link href="style.css" rel="stylesheet" />
+    <!-- META does not contain a closing tag! charset is representing all the charaters-->
+    <!-- // not visible in the browser window(external matters!) -->
+    <title>The basic Langugage of the Web: HTML</title>
+    <!--this is the internal css!! using the style tag this is not pratical use!!-->
+    <!--<style>
+      h3 {
+        color: aquamarine;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- // WILL ALWAYS BE visible -->
+    <!-- Heading are in hierarchy from h1 to h6 (primary is h1) -->
+    <!-- heading is to break up the doc into logical sections (semnatics) -->
+    <!-- good pratice is to have one h1 per html page -->
+    <header class="main-h">
+      <!--header is again a html 5 element for semnatic purpouse-->
+      <h1>📘 The Code Magazine</h1>
+      <nav>
+        <!--nav is used to mention or group the navigation elements and encloses the anchor elements as a block -->
+        <p>
+          <!--a tag is a inline element not a block element  -->
+          <a href="blog.html">Blog</a>
+          <a href="#">Challenges</a>
+          <a href="#">Flexbox</a>
+          <a href="#">CSS Grid</a>
+        </p>
+      </nav>
+    </header>
+    <!-- <b> for bold and not a good pratice becz of semnatic meaning. use<strong> <em> -->
+    <article>
+      <header>
+        <!--article element is a semnatic representation of blogs-->
+        <h2>The Basic Language of the Web: HTML</h2>
+        <!--Inline CSS style="color:value" never be used!!!-->
+        <img src="laura-jones.jpg" alt="author" height="100" width="100" />
+        <p id="author">
+          Posted by <strong> Laura Jones</strong> on Monday, June 21st 2027
+        </p>
+        <img src="post-img.jpg" alt="main" width="800" />
+      </header>
+      <!-- image tag src and alt is highly imp can also specify width and height -->
+      <p>
+        All modern websites and web applications are built using three
+        <em>fundamental</em>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web.
+      </p>
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+      <div>
+        <!-- div is a more generic semnatic element!! dliv gives block level representation-->
+        <h3>What is HTML?</h3>
+        <p>
+          HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+          <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+          language that web developers use to structure and describe the content
+          of a webpage (not a programming language).
+        </p>
+        <p>
+          HTML consists of elements that describe different types of content:
+          paragraphs, links, headings, images, video, etc. Web browsers
+          understand HTML and render HTML code as websites.
+        </p>
+        <p>In HTML, each element is made up of 3 parts:</p>
+        <ol>
+          <li>The opening tag</li>
+          <li>The closing tag</li>
+          <li>The actual element</li>
+        </ol>
+        <p>
+          You can learn more at the
+          <a href="https://developer.mozilla.org/en-US/" target="_blank">
+            MDN Web Docs.</a
+          >
+        </p>
+      </div>
+      <h3>Why should you learn HTML?</h3>
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>
+          To hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+      <p>Hopefully you learned something new here. See you next time!</p>
+
+      <!--all these html 5 extra tags if they dont have any appeling changes these work on seo or semnatic purpouses -->
+    </article>
+
+    <!--aside element to provide secondary content to the page-->
+    <aside>
+      <h3>Related Posts</h3>
+      <ol>
+        <li class="r-l">
+          <img src="related-1.jpg" alt="related-1" width="75" />
+          <a href="#"> How to Learn Web Development</a>
+          <br />
+          <p class="r-a">By Rns</p>
+        </li>
+        <li class="r-l">
+          <img src="related-2.jpg" alt="related-1" width="75" />
+          <a href="#"> The Unknown power of Css</a>
+          <br />
+          <p class="r-a">By Rpk</p>
+        </li>
+        <li class="r-l">
+          <img src="related-3.jpg" alt="related-1" width="75" />
+          <a href="#"> Why Js is Awesome</a>
+          <br />
+          <p class="r-a">By Mbs</p>
+        </li>
+      </ol>
+    </aside>
+    <footer>
+      <!--html entity to have symbols-->
+      <!-- id anc class can have same names and mltiple classes can be used by seperatiog them with space -->
+      <p id="footer" class="footer c">
+        Copyright &copy;2023 by the Code Magazine
+      </p>
+    </footer>
+  </body>
+</html>
