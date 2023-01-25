@@ -1,3 +1,5 @@
+/* most of the properties related to text gets inherited and !important does not apply with inheritance and applies in direct application */
+/* universal selector does not come under inheritance but in turn gets applied to each and every element */
 h3,
 h1,
 h2 {
@@ -99,6 +101,7 @@ a:hover {
 a:active {
   color: paleturquoise;
 }
+
 /* css conflicts always write css as simple as that */
 /* #footer {
   color: red;

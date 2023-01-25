@@ -1,0 +1,41 @@
+body {
+  border: 5px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: azure;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+p strong {
+  font-weight: bolder;
+  font-size: larger;
+}
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+a:hover {
+  color: red;
+}
+aside h2 {
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+}
+main p:nth-child(3) {
+  font-size: small;
+  color: goldenrod;
+  text-transform: uppercase;
+}
+button {
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  background-color: black;
+}
