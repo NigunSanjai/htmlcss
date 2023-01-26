@@ -25,19 +25,19 @@
       <!-- Heading are in hierarchy from h1 to h6 (primary is h1) -->
       <!-- heading is to break up the doc into logical sections (semnatics) -->
       <!-- good pratice is to have one h1 per html page -->
-      <header class="main-h">
+      <header class="main-h clearfix">
         <!--header is again a html 5 element for semnatic purpouse-->
         <h1>📘 The Code Magazine</h1>
         <nav>
           <!--nav is used to mention or group the navigation elements and encloses the anchor elements as a block -->
-          <p>
-            <!--a tag is a inline element not a block element  -->
-            <a href="blog.html">Blog</a>
-            <a href="#">Challenges</a>
-            <a href="#">Flexbox</a>
-            <a href="#">CSS Grid</a>
-          </p>
+
+          <!--a tag is a inline element not a block element  -->
+          <a href="blog.html">Blog</a>
+          <a href="#">Challenges</a>
+          <a href="#">Flexbox</a>
+          <a href="#">CSS Grid</a>
         </nav>
+        <!-- <div class="clear"></div> -->
       </header>
       <!-- <b> for bold and not a good pratice becz of semnatic meaning. use<strong> <em> -->
       <article>
@@ -45,8 +45,14 @@
           <!--article element is a semnatic representation of blogs-->
           <h2>The Basic Language of the Web: HTML</h2>
           <!--Inline CSS style="color:value" never be used!!!-->
-          <img src="laura-jones.jpg" alt="author" height="100" width="100" />
-          <p id="author">
+          <img
+            src="laura-jones.jpg"
+            alt="author"
+            height="100"
+            width="100"
+            class="author-img"
+          />
+          <p id="author" class="a">
             Posted by <strong> Laura Jones</strong> on Monday, June 21st 2027
           </p>
           <img class="main-img" src="post-img.jpg" alt="main" width="800" />

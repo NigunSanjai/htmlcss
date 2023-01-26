@@ -2,15 +2,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /* to center the page */
 .main-b {
-  width: 800px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 /* the absolute takes this to position */
 body {
+  border-top: 10px solid rgba(61, 198, 46, 0.929);
   position: relative;
 }
 /* most of the properties related to text gets inherited and !important does not apply with inheritance and applies in direct application */
@@ -106,10 +108,8 @@ li:last-child {
 aside {
   background-color: rgb(237, 237, 237);
   border: 5px solid rgba(61, 198, 46, 0.929);
-  margin: 50px 0;
-  padding: 50px 0;
+  padding: 50px 20px;
   text-align: center;
-  width: 700px;
 }
 aside img {
   margin: 0;
@@ -146,10 +146,11 @@ a:active {
   width: 80%;
   height: auto;
 }
-nav a:link {
+nav a {
+  font-weight: bold;
   display: inline-block;
-  margin: 20px;
-  padding: 5px;
+  margin: 10px;
+  padding: 2px;
 }
 /* absolute pos are n relation with the viewport i.e visible part of the brower  */
 button {
@@ -192,4 +193,46 @@ h2::before {
   position: absolute;
   top: 2.5px;
   right: 0;
+}
+/* Floats are CSS old layout types */
+.author-img {
+  float: left;
+}
+.a {
+  margin-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  float: left;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+  margin-top: 10px;
+}
+.clear {
+  clear: both;
+}
+/* this property to clear height collapsing!!! in case of using floats! */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+article {
+  width: 800px;
+  float: left;
+}
+aside {
+  width: 350px;
+  float: right;
+  box-sizing: border-box;
+}
+footer {
+  background-color: aliceblue;
+  clear: both;
+}
+ol {
+  margin: 0;
 }
