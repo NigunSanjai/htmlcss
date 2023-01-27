@@ -135,11 +135,11 @@ h4 {
 /* .price {
     margin-top: 10px;
   } */
-main {
+/* main {
   display: flex;
   flex: 0 0 550px;
   gap: 15px;
-}
+} */
 aside {
   display: flex;
   flex-flow: column;
@@ -178,4 +178,20 @@ aside li:first-child {
 aside,
 .sub-p {
   margin-top: 10px;
+}
+.main-c {
+  display: grid;
+  grid-template-columns: 200px 200px 1fx;
+  column-gap: 20px;
+}
+.h1 {
+  grid-column: 1/4;
+}
+.img {
+  grid-column: 1/2;
+  grid-row: 2/2;
+  height: 200px;
+}
+button {
+  grid-column: 1/4;
 }
