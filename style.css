@@ -6,7 +6,7 @@
 }
 /* to center the page */
 .main-b {
-  width: 1200px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -252,28 +252,42 @@ ol {
   align-items: center;
   gap: 30px;
   margin-bottom: 20px;
-  /* flex-basis: 200px; */
 }
 .r-a {
   display: flex;
   margin: 0;
   align-items: center;
 }
+/*
 .next-c {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-}
+} */
 aside li {
   font-size: 18px;
   line-height: 1.2;
   margin: 0;
 }
-
+/*
 aside {
   flex: 0 0 300px;
 }
 article {
   flex: 1 0 825px;
   margin-bottom: 0;
+} */
+/* CSS GRID */
+.main-b {
+  display: grid;
+  grid-template-columns: 1fr 35 0px;
+  column-gap: 70px;
+  row-gap: 40px;
+}
+.main-h {
+  grid-column: 1/3;
+  margin: 0;
+}
+footer {
+  grid-column: 1/-1;
 }
