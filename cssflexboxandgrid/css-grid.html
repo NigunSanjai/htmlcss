@@ -40,6 +40,13 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        column-gap: 10px;
+        row-gap: 20px;
+        display: none;
       }
 
       .container--2 {
@@ -47,13 +54,38 @@
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
-        /* CSS GRID */
+        /* css grid */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        /* align items outside and inside the track */
+        /* inside container clearing and distributing the empty space*/
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+        /* aligning content inside cells */
+        /* vertical */
+        align-items: center;
+        /* horizontal */
+        justify-items: center;
       }
+      /* .el--8 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .el--2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .el--3 {
+        grid-column: 4/5;
+        grid-row: -2/-1;
+      } */
     </style>
   </head>
   <body>
