@@ -69,7 +69,7 @@ li {
   font-size: 22px;
   text-align: justify;
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 li:last-child {
   margin-bottom: 10px;
@@ -149,7 +149,7 @@ a:active {
 nav a {
   font-weight: bold;
   display: inline-block;
-  margin: 10px;
+  margin-right: 20px;
   padding: 2px;
 }
 /* absolute pos are n relation with the viewport i.e visible part of the brower  */
@@ -195,7 +195,7 @@ h2::before {
   right: 0;
 }
 /* Floats are CSS old layout types */
-.author-img {
+/* .author-img {
   float: left;
 }
 .a {
@@ -213,9 +213,9 @@ nav {
 }
 .clear {
   clear: both;
-}
+} */
 /* this property to clear height collapsing!!! in case of using floats! */
-.clearfix::after {
+/* .clearfix::after {
   clear: both;
   content: "";
   display: block;
@@ -235,4 +235,45 @@ footer {
 }
 ol {
   margin: 0;
+} */
+/* Floats over */
+.main-h {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-h {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.r-l {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  /* flex-basis: 200px; */
+}
+.r-a {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+.next-c {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+aside li {
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+}
+article {
+  flex: 1 0 825px;
+  margin-bottom: 0;
 }
